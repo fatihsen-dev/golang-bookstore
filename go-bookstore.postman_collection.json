@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "55d9a694-e704-4489-9882-cbd7fa643af4",
+		"name": "go-bookstore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21874286"
+	},
+	"item": [
+		{
+			"name": "Books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/book",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBookById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/book/2",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"book",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"Book 6\",\r\n    \"Author\":\"Author 6\",\r\n    \"Publication\":\"Publication 6\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/book",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBook",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"Book 2 (Edited)\",\r\n    \"Author\":\"Author 2\",\r\n    \"Publication\":\"Publication 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/book/2",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"book",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBook",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/book/5",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"book",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
